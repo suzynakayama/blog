@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { Article } from "../components/Article";
+// import { SearchBox } from "../components/SearchBox";
 import { sortByDate } from "../utils";
 
 export default function Home({ articles }) {
@@ -11,7 +12,7 @@ export default function Home({ articles }) {
 			<Head>
 				<title>Suzy's Blog</title>
 			</Head>
-
+			{/* <SearchBox value="articles" /> */}
 			<div className="posts">
 				{articles.map((article, idx) => (
 					<Article key={idx} article={article} />

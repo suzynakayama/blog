@@ -93,6 +93,15 @@ header .container {
 	padding: 15px 30px;
 }
 
+.article-card-link {
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.article-card-link:hover {
+	transform: scale(1.02);
+}
+
 .article-thumbnail {
 	position: relative;
 	height: 200px;
