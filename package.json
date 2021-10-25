@@ -9,11 +9,14 @@
 		"start": "next start"
 	},
 	"dependencies": {
+		"babel-plugin-styled-components": "^1.13.3",
 		"gray-matter": "^4.0.3",
 		"highlightjs": "^9.16.2",
 		"next": "11.1.2",
 		"react": "17.0.2",
 		"react-dom": "17.0.2",
-		"remarkable": "^2.0.1"
+		"react-scroll-up-button": "^1.6.4",
+		"remarkable": "^2.0.1",
+		"styled-components": "^5.3.3"
 	}
 }

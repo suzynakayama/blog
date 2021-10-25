@@ -3,8 +3,9 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { Article } from "../components/Article";
-// import { SearchBox } from "../components/SearchBox";
 import { sortByDate } from "../utils";
+import { Articles } from "../styles/globalStyles";
+import ScrollUpButton from "react-scroll-up-button";
 
 export default function Home({ articles }) {
 	return (
@@ -29,12 +30,12 @@ export default function Home({ articles }) {
 					}}
 				/>
 			</Head>
-			{/* <SearchBox value="articles" /> */}
-			<div className="posts">
+			<Articles>
 				{articles.map((article, idx) => (
 					<Article key={idx} article={article} />
 				))}
-			</div>
+			</Articles>
+			<ScrollUpButton />
 		</div>
 	);
 }

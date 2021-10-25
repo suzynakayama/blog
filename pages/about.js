@@ -1,8 +1,11 @@
+import styled from "styled-components";
+import { Container } from "../styles/globalStyles";
+
 const about = () => {
 	return (
-		<div className="container about">
+		<About>
 			<h2>About Me</h2>
-			<img
+			<AboutImg
 				className="about-img"
 				src="/images/suzy.jpg"
 				alt="Suzy Picture"
@@ -26,11 +29,32 @@ const about = () => {
 				I created this blog as a way to share my learning and
 				experiences as a software developer.
 			</p>
-			<p className="about-phrase">
+			<AboutPhrase>
 				Learning is my hobby and creating is my passion.
-			</p>
-		</div>
+			</AboutPhrase>
+		</About>
 	);
 };
 
 export default about;
+
+const About = styled(Container)`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+`;
+
+const AboutImg = styled.img`
+	border-radius: 48%;
+	height: 300px;
+	width: 245px;
+	margin: 30px;
+	border-style: double;
+	border-width: 2px;
+	border-color: #000;
+`;
+
+const AboutPhrase = styled.p`
+	font-weight: 300;
+	font-style: italic;
+`;

@@ -3,6 +3,9 @@ import path from "path";
 import matter from "gray-matter";
 import md from "../../utils/remarkable";
 import Image from "next/image";
+import styled from "styled-components";
+import { ArticleDate } from "../../components/Article";
+import ScrollUpButton from "react-scroll-up-button";
 
 const ArticlePage = ({
 	metadata: { title, date, thumbnail },
@@ -10,16 +13,18 @@ const ArticlePage = ({
 	content,
 }) => {
 	let theContent = md.render(content);
+
 	return (
 		<div>
-			<h1 className="article-title">{title}</h1>
-			<div className="article-date">Posted on {date}</div>
-			<div className="article-img">
+			<ArticleTitle>{title}</ArticleTitle>
+			<ArticleDate>Posted on {date}</ArticleDate>
+			<ArticleImg>
 				<Image src={thumbnail} alt="" layout="fill" />
-			</div>
-			<div className="article-body">
+			</ArticleImg>
+			<ArticleBody>
 				<div dangerouslySetInnerHTML={{ __html: theContent }}></div>
-			</div>
+			</ArticleBody>
+			<ScrollUpButton />
 		</div>
 	);
 };
@@ -56,3 +61,29 @@ export async function getStaticProps({ params: { slug } }) {
 }
 
 export default ArticlePage;
+
+const ArticleImg = styled.div`
+	position: relative;
+	height: 450px;
+`;
+
+const ArticleTitle = styled.h1`
+	margin: 10px 0;
+`;
+
+const ArticleBody = styled.div`
+	& ul {
+		line-height: 2.3;
+		margin-left: 15px;
+	}
+	& ol {
+		line-height: 2.3;
+		margin-left: 15px;
+	}
+	& pre {
+		background: #f4f4f4;
+		padding: 20px;
+		margin: 20px 0;
+		line-height: 2.3;
+	}
+`;
