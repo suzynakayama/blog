@@ -22,7 +22,12 @@ export const Header = () => {
 
 const TheHeader = styled(Container)`
 	max-width: unset;
-	background: rgb(34, 111, 226);
+	background: rgb(17, 174, 236);
+	background: linear-gradient(
+		110deg,
+		rgba(17, 174, 236, 1) 0%,
+		rgba(133, 36, 203, 1) 100%
+	);
 	color: #fff;
 	padding: 15px;
 	margin-bottom: 40px;

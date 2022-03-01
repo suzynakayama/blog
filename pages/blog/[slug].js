@@ -8,7 +8,7 @@ import { ArticleDate } from "../../components/Article";
 import ScrollUpButton from "react-scroll-up-button";
 
 const ArticlePage = ({
-	metadata: { title, date, thumbnail },
+	metadata: { title, date, thumbnail, thumbnailInfo },
 	slug,
 	content,
 }) => {
@@ -19,7 +19,7 @@ const ArticlePage = ({
 			<ArticleTitle>{title}</ArticleTitle>
 			<ArticleDate>Posted on {date}</ArticleDate>
 			<ArticleImg>
-				<Image src={thumbnail} alt="" layout="fill" />
+				<Image src={thumbnail} alt={thumbnailInfo} layout="fill" />
 			</ArticleImg>
 			<ArticleBody>
 				<div dangerouslySetInnerHTML={{ __html: theContent }}></div>
@@ -34,7 +34,7 @@ export async function getStaticPaths() {
 
 	const paths = files.map(filename => ({
 		params: {
-			slug: filename.replace(".md", ""),
+			slug: filename.replace(".mdx", ""),
 		},
 	}));
 
@@ -46,7 +46,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
 	const textWithMetadata = fs.readFileSync(
-		path.join("articles", slug + ".md"),
+		path.join("articles", slug + ".mdx"),
 		"utf-8"
 	);
 	const { data: metadata, content } = matter(textWithMetadata);
