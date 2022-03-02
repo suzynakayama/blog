@@ -18,9 +18,6 @@ const ArticlePage = ({
 		<div>
 			<ArticleTitle>{title}</ArticleTitle>
 			<ArticleDate>Posted on {date}</ArticleDate>
-			<ArticleImg>
-				<Image src={thumbnail} alt="" layout="fill" />
-			</ArticleImg>
 			<ArticleBody>
 				<div dangerouslySetInnerHTML={{ __html: theContent }}></div>
 			</ArticleBody>
@@ -62,16 +59,12 @@ export async function getStaticProps({ params: { slug } }) {
 
 export default ArticlePage;
 
-const ArticleImg = styled.div`
-	position: relative;
-	height: 450px;
-`;
-
 const ArticleTitle = styled.h1`
 	margin: 10px 0;
 `;
 
 const ArticleBody = styled.div`
+	margin-top: 2rem;
 	& ul {
 		line-height: 2.3;
 		margin-left: 15px;

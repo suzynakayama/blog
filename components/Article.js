@@ -32,6 +32,7 @@ export const Article = ({ article }) => {
 };
 
 const ArticleLink = styled.a`
+	color: #333;
 	cursor: pointer;
 	transition: all 0.5s;
 	&:hover {
