@@ -2,7 +2,7 @@
 title: "A Lifelong Task"
 date: "Jan 12 2022"
 description: "Learning and re-learning."
-thumbnail: "/images/articles/learning.jpeg"
+thumbnail: "/images/articles/learning.jpg"
 thumbnailInfo: "Photo by Brett Jordan on Unsplash"
 ---
 

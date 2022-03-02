@@ -2,7 +2,7 @@
 title: "Oh Big O! (Part 3)"
 date: "Feb, 02 2022"
 description: "Last Part of Big O. Example!"
-thumbnail: "/images/articles/big-o-3.jpeg"
+thumbnail: "/images/articles/big-o-3.jpg"
 thumbnailInfo: "Photo by Chaitanya Tvs on Unsplash"
 ---
 

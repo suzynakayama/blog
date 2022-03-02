@@ -2,7 +2,7 @@
 title: "Oh Big O! (Part 2)"
 date: "Jan 26 2022"
 description: "A little bit more about Big O"
-thumbnail: "/images/articles/big-o-2.jpeg"
+thumbnail: "/images/articles/big-o-2.jpg"
 thumbnailInfo: "Photo by Jeremy Perkins on Unsplash"
 ---
 

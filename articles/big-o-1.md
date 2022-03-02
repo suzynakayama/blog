@@ -2,7 +2,7 @@
 title: "Oh Big O! (Part 1)"
 date: "Jan 19 2022"
 description: "Big who?"
-thumbnail: "/images/articles/big-o.jpeg"
+thumbnail: "/images/articles/big-o.jpg"
 thumbnailInfo: "Photo by Bernard Hermant on Unsplash"
 ---
 
