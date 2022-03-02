@@ -44,12 +44,13 @@ export async function getStaticProps() {
 	const files = fs.readdirSync(path.join("articles"));
 
 	const articles = files.map(filename => {
-		const slug = filename.replace(".md", "");
+		const slug = filename.replace(".mdx", "");
 		const textWithMetadata = fs.readFileSync(
 			path.join("articles", filename),
 			"utf-8"
 		);
 		const { data: metadata } = matter(textWithMetadata);
+		console.log(metadata);
 		return { slug, metadata };
 	});
 

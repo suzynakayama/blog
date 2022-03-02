@@ -1,0 +1,54 @@
+---
+title: "Data Structures"
+date: "Feb 09 2022"
+description: "What are data structures, anyway? And our first DS: Arrays!"
+thumbnail: "/images/articles/internet.jpg"
+thumbnailInfo: "Photo by JJ Ying on Unsplash"
+---
+
+This is the beginning of a series of posts about data structures and algorithms. It will be a bumpy and crazy ride, but I hope you like it.
+
+![bumpy ride](https://media.giphy.com/media/12LSDuudJOUDGU/giphy.gif)
+
+And before we begin this, if you didn't read my explanation on [Big O](/articles/59-days.md), please take a look, you will not regret. Now let's do this! 💪
+
+Data structures are a collections of values, the relationship among them, and the functions or operations that can be applied to the data. In other words, is the way we organize data within our computers.
+
+There is NO best one. It really depends on what type of data are you dealing with and what is the outcome you expect from it.
+
+## Arrays
+
+You can think of an array as a numbered list. Arrays are a complex data structure where the items are indexed and are stored in a contiguous way in memory.
+
+> Translation:
+> _Imagine a collection of items one besides the other (contiguous) and you can reach any item using their number (index) on the list. That's what we are talking about here._
+
+There are 2 main types of Arrays:
+
+1. **Static** - they have a fixed size. For example, in C# you can create an array of 5 items.
+2. **Dynamic** - they are not fixed in size. Ex. in Javascript and Python we don't actually set a max size when we create arrays.
+
+#### Usage
+
+-   When you need order
+-   When you need lookups, push and pop (add and delete from the end) fast
+
+#### Pros and Cons
+
+| PROS        |                 CONS                 |
+| ----------- | :----------------------------------: |
+| Ordered     |                                      |
+| Search O(n) |     Fixed size (if using static)     |
+| Push O(1)   | Unshift/Or insert in the middle O(n) |
+| Pop O(1)    |  Shift/Or delete in the middle O(n)  |
+
+#### Big O of Dynamic Arrays
+
+-   **Get**: O(1) Space-Time
+-   **Search**: O(n) Time and O(1) Space
+-   **Append(Push)**: O(1) Space-Time - Amortized analysis (the amount of times we will be able to add as O(1) makes the few times we have to double the array (big O(n) meaningless)
+-   **Insertion(Unshift or in the middle)**: O(n) Time and O(1) Space
+-   **Delete(Shift or in the middle)**: O(n)
+-   **Delete(Pop - from end)**: O(1)
+-   **Concat, Slice, Splice, Map, forEach, filter, Reduce, etc**: O(n) Time and O(1) Space if doing in place
+-   **Sort**: O(n Log n)
