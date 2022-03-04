@@ -6,7 +6,7 @@ thumbnail: "/images/articles/big-o-2.jpg"
 thumbnailInfo: "Photo by Jeremy Perkins on Unsplash"
 ---
 
-Hello again! This is part 2 of the Big O series! If you didn’t see part 1, please check it out [here](big-o-1.md)!
+Hello again! This is part 2 of the Big O series! If you didn’t see part 1, please check it out [here](big-o-1)!
 
 ![britney spears oh](https://media.giphy.com/media/Dg4bJOS0OpyzC/giphy.gif)
 
