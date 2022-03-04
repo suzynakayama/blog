@@ -6,7 +6,7 @@ thumbnail: "/images/articles/big-o-3.jpg"
 thumbnailInfo: "Photo by Chaitanya Tvs on Unsplash"
 ---
 
-Hello again! This is part 3 of the Big O series! If you didn’t see part 1 and 2, please check it out [here](big-o-1.md) and [here](big-o-2.md)! 👀
+Hello again! This is part 3 of the Big O series! If you didn’t see part 1 and 2, please check it out [here](big-o-1) and [here](big-o-2)! 👀
 
 ![Lucille Ball — I Love Lucy gif from Giphy](https://media.giphy.com/media/uQ1IhcydV7k64/giphy.gif)
 
